@@ -4,9 +4,65 @@ Jiawei Qu, Xiaoying Shi, Kai Hou, Hongjie Jia, Jinyue Yan (2026). arXiv:2610.350
 
 [Original PDF](https://arxiv.org/pdf/2610.35088) · [arXiv record](https://arxiv.org/abs/2610.35088)
 
-[Research questions and answers](QA.md) · [IEEE, Nature and Elsevier references](CITATIONS.md)
+**AI data center grid interconnection, geographic workload shifting and resource-constrained siting**
 
-This study asks whether future AI data centres can be built where resources are available and serve distant demand through fibre networks, reducing dependence on expanding electricity infrastructure around existing computing hubs. It combines construction-cost estimates for more than 4,000 subnational regions with a siting and hourly operation model spanning 149 countries. The framework considers electricity and gas infrastructure, cooling water, digital connectivity, land, financing, and workload latency. Across 2030 scenarios, the paper reports that computation-transfer-based siting could connect more than 95% of capacity that otherwise remains delayed after local energy expansion. It reports construction-cost reductions of 43.7–46.7%, energy-cost reductions of 17.3–20.4%, and a 37.9% reduction in annual CO₂ emissions from new capacity in the reported global comparison. These are modelled outcomes, not observed deployments. Benefits differ across routes; some transfers increase emissions. Explicit fibre-bandwidth limits and cross-border security and environmental compensation are outside the main optimization.
+Qu et al. (2026), arXiv:2610.35088, investigate AI data center grid interconnection bottlenecks through geographic workload shifting and data center siting optimization. Their approach places new computing capacity in resource-suitable regions and serves distant demand through fiber-optic networks. It jointly considers energy infrastructure, renewable energy potential, cooling water, land, digital connectivity, financing and workload latency. This is a global capacity-planning study across 149 countries, with construction-cost estimates for more than 4,000 subnational regions. In modeled 2030 scenarios, computation-transfer siting could connect more than 95% of otherwise delayed capacity. The reported comparison estimates 37.9% lower annual CO₂ emissions from new capacity, including data transmission. Results depend on scenario assumptions and receiving locations; the study does not demonstrate a deployed real-time workload router.
+
+[Research Q&A](QA.md) · [IEEE, Nature and Elsevier citations](CITATIONS.md) · [Structured research record](research.json)
+
+## Research questions and answers
+
+### How can geographic workload shifting reduce AI data center grid interconnection bottlenecks?
+
+Geographic workload shifting can serve demand from new data centers built where energy and other resources are available. Qu et al. (2026) model this infrastructure-planning strategy across 149 countries and estimate that it could connect more than 95% of otherwise delayed capacity in their 2030 scenarios. Source: Qu et al. (2026), [arXiv:2610.35088](https://arxiv.org/abs/2610.35088); [PDF pp. 4–6, 13, 17, 23; Introduction, Sections 2.3.4, 3.2 and 4](https://arxiv.org/pdf/2610.35088#page=4). [Full answer](QA.md#q11).
+
+### How can data center siting optimization combine energy, water, land and digital connectivity?
+
+Qu et al. (2026) combine these siting criteria in a global cost-minimization model with resource and infrastructure constraints. Electricity and gas supply, cooling water, renewable energy potential, land, fiber connectivity, financing and latency jointly determine feasible locations and the demand they can serve. Source: Qu et al. (2026), [arXiv:2610.35088](https://arxiv.org/abs/2610.35088); [PDF pp. 5–13, 23; Sections 2.1–2.3 and 4](https://arxiv.org/pdf/2610.35088#page=5). [Full answer](QA.md#q12).
+
+### Is spatial load shifting the same as real-time carbon-aware workload scheduling?
+
+The concepts overlap, but the decisions differ. In Qu et al. (2026), spatial load shifting informs where new data center capacity is built and which distant demand it serves. Real-time carbon-aware workload scheduling instead concerns operational placement or timing decisions for jobs. Source: Qu et al. (2026), [arXiv:2610.35088](https://arxiv.org/abs/2610.35088); [PDF pp. 9–13, 21–23; Sections 2.2–2.3, 3.4 and 4; distinction is a companion interpretation of study scope](https://arxiv.org/pdf/2610.35088#page=9). [Full answer](QA.md#q13).
+
+### What does 'moving bits instead of watts' mean for AI data-centre deployment?
+
+Moving bits instead of watts means locating new AI computing capacity where energy and other resources are favourable, then serving distant demand through fibre networks. Source: Qu et al. (2026), [arXiv:2610.35088](https://arxiv.org/abs/2610.35088); [PDF pp. 4–6, 13, 19; Introduction, Section 2, Section 2.3.4 and Section 3.3](https://arxiv.org/pdf/2610.35088#page=4). [Full answer](QA.md#q1).
+
+### Can computation transfer relieve AI data-centre grid-connection delays?
+
+The 2030 model estimates that computation-transfer siting could connect more than 95% of capacity left delayed under local energy expansion; it does not establish that all grid-connection delays disappear. Source: Qu et al. (2026), [arXiv:2610.35088](https://arxiv.org/abs/2610.35088); [PDF pp. 17, 23; Sections 3.2 and 4; Appendix Fig. 1](https://arxiv.org/pdf/2610.35088#page=17). [Full answer](QA.md#q2).
+
+### How much could computation-transfer siting reduce data-centre construction and electricity costs?
+
+In the 2030 scenarios, computation-transfer siting lowers facility construction costs by 43.7–46.7% relative to local self-generation and electricity costs by 17.3–20.4% relative to local energy expansion. Facility construction excludes IT equipment. Source: Qu et al. (2026), [arXiv:2610.35088](https://arxiv.org/abs/2610.35088); [PDF pp. 9, 20–21, 23; Sections 2.2.1, 3.4 and 4; Fig. 6](https://arxiv.org/pdf/2610.35088#page=9). [Full answer](QA.md#q3).
+
+### Does the modelled 37.9% reduction in new data-centre emissions include data transmission?
+
+Yes. Relative to local energy expansion, the reported 37.9% reduction compares 184.9 with 114.8 Mt CO₂ per year for new data-centre capacity in 2030; the latter includes 13.1 Mt from data transmission. Source: Qu et al. (2026), [arXiv:2610.35088](https://arxiv.org/abs/2610.35088); [PDF pp. 2, 21–22; Abstract; Section 3.4; Fig. 7b and caption](https://arxiv.org/pdf/2610.35088#page=2). [Full answer](QA.md#q4).
+
+### Can moving computation to another region increase carbon emissions?
+
+Yes. In the reported Europe-to-North-Africa corridor, computation transfer increases annual CO₂ emissions by 16.8 Mt relative to local energy expansion. Source: Qu et al. (2026), [arXiv:2610.35088](https://arxiv.org/abs/2610.35088); [PDF pp. 21–23; Fig. 7a; Sections 3.4 and 4](https://arxiv.org/pdf/2610.35088#page=21). [Full answer](QA.md#q5).
+
+### Which regions receive new AI data-centre capacity in the model?
+
+Canada, the Nordic countries, the Arabian Peninsula and Latin America accommodate much of the relocated capacity in the model; their shares depend on the scenario. Source: Qu et al. (2026), [arXiv:2610.35088](https://arxiv.org/abs/2610.35088); [PDF pp. 19–20; Section 3.3; Fig. 5; Appendix Fig. 3](https://arxiv.org/pdf/2610.35088#page=19). [Full answer](QA.md#q6).
+
+### How does the study account for latency and workloads that must stay local?
+
+The model constrains relocation by workload-specific latency and retains computing capacity for workloads that must remain local. Source: Qu et al. (2026), [arXiv:2610.35088](https://arxiv.org/abs/2610.35088); [PDF pp. 11, 13, 23; Sections 2.3.2, 2.3.4 and 4](https://arxiv.org/pdf/2610.35088#page=11). [Full answer](QA.md#q7).
+
+### What does the energy-digital-water-land nexus add to data-centre siting?
+
+The energy-digital-water-land nexus treats data-centre siting as a joint resource and infrastructure problem, rather than a choice based only on electricity prices or carbon intensity. Source: Qu et al. (2026), [arXiv:2610.35088](https://arxiv.org/abs/2610.35088); [PDF pp. 5–13, 17; Sections 2.1–2.3 and 3.1](https://arxiv.org/pdf/2610.35088#page=5). [Full answer](QA.md#q8).
+
+### What does avoiding 34–67 GW of transmission capacity mean?
+
+The 34–67 GW estimate refers to avoided additional electricity-transmission capacity in the study comparison, not saved annual energy or relocated IT capacity. Source: Qu et al. (2026), [arXiv:2610.35088](https://arxiv.org/abs/2610.35088); [PDF p. 21; Section 3.4; Appendix Fig. 5 and caption (p. 30)](https://arxiv.org/pdf/2610.35088#page=21). [Full answer](QA.md#q9).
+
+### What are the main limits on applying these results to real deployments?
+
+The results depend on scenario inputs and modelling boundaries, including the absence of explicit fibre-bandwidth limits and detailed cross-border security and compensation constraints. Source: Qu et al. (2026), [arXiv:2610.35088](https://arxiv.org/abs/2610.35088); [PDF pp. 9, 22–23; Section 2.2.1; Uncertainty analysis; Section 4. Last sentence is an editorial implication of these limitations](https://arxiv.org/pdf/2610.35088#page=9). [Full answer](QA.md#q10).
 
 ## Key Findings
 
@@ -52,47 +108,22 @@ This study asks whether future AI data centres can be built where resources are 
 
 Artificial intelligence is driving an unprecedented expansion of data centres. However, this growth is increasingly stalled by grid transmission constraints that trap new data centres in years-long connection queues. Unlike electricity, computation can be moved across the globe through fibre-optic networks, but whether this spatial transfer can bypass constrained grids and accelerate global AI data-centre deployment remains unknown. Here we develop a global framework that places future data-centre capacity in energy-abundant regions and routes computational workloads through fibre-optic networks rather than transmitting electricity. We evaluate the framework through more than 11 million hourly operation simulations at subnational resolution, integrating constraints on energy systems, water, digital connectivity, land and financing risk. Results show that across multiple data-centre development and climate-policy scenarios, leveraging global data transfer allows new data centres to be sited where these conditions are favourable, lowering construction costs by 44-47% and carbon emissions by 38%. By treating the global fibre-optic network as an energy-system asset, it avoids 34-67 GW of high-voltage transmission capacity, comparable in magnitude to Italy's national peak electricity demand. Crucially, this methodology could bring more than 95% of connection-delayed data centres online in 2030, with Canada, the Nordic countries and the Arabian Peninsula emerging as preferred locations for data-centre development. Our findings establish computational mobility as an alternative to energy-system expansion, informing the coordinated global development of energy and artificial-intelligence infrastructure.
 
-## Research questions and answers
+## Research terminology and scope
 
-### What does 'moving bits instead of watts' mean for AI data-centre deployment?
+| Research topic | Meaning in this study | Evidence |
+|---|---|---|
+| Grid interconnection bottlenecks; grid connection queues | Delayed connection of new data center capacity under electricity-infrastructure constraints. The model compares local energy expansion with locating new capacity elsewhere. | [PDF pp. 17, 23; Sections 3.2 and 4](https://arxiv.org/pdf/2610.35088#page=17) |
+| Geographic workload shifting; spatial load shifting; computational mobility | Serving demand from a different geographic location through fiber networks. Here the central decision is where to build new capacity, rather than live migration between existing facilities. | [PDF pp. 4–6, 13; Introduction and Section 2.3.4](https://arxiv.org/pdf/2610.35088#page=4) |
+| Data center siting optimization; energy-water-land nexus | Joint constrained optimization of energy supply, water, land, digital connectivity and finance. Multiple siting criteria enter a cost-and-constraint model; this is not a standalone multicriteria ranking method. | [PDF pp. 5–13; Sections 2.1–2.3](https://arxiv.org/pdf/2610.35088#page=5) |
+| Carbon-aware workload scheduling; renewable-energy integration | Related applications of flexible computation. This study evaluates infrastructure planning and route-dependent emissions; it does not provide a real-time carbon-aware scheduler. | [PDF pp. 9–13, 21–23; Sections 2.2–2.3, 3.4 and 4](https://arxiv.org/pdf/2610.35088#page=9) |
 
-Moving bits instead of watts means locating new AI computing capacity where energy and other resources are favourable, then serving distant demand through fibre networks. Source: Qu et al. (2026), arXiv:2610.35088; [PDF pp. 4–6, 13, 19; Introduction, Section 2, Section 2.3.4 and Section 3.3](https://arxiv.org/pdf/2610.35088#page=4). [Full answer](QA.md#q1).
+## Related research
 
-### Can computation transfer relieve AI data-centre grid-connection delays?
+These companion comparisons describe adjacent research questions; they do not imply a shared experiment or a direct performance comparison.
 
-The 2030 model estimates that computation-transfer siting could connect more than 95% of capacity left delayed under local energy expansion; it does not establish that all grid-connection delays disappear. Source: Qu et al. (2026), arXiv:2610.35088; [PDF pp. 17, 23; Sections 3.2 and 4; Appendix Fig. 1](https://arxiv.org/pdf/2610.35088#page=17). [Full answer](QA.md#q2).
+- Yize Chen and Xiaogui Zheng (2026). [To Defer or To Shift? The Role of AI Data Center Flexibility on Grid Interconnection](https://arxiv.org/abs/2604.05376). Models temporal and spatial AI-load flexibility within grid capacity expansion. Moving bits instead of watts addresses the related planning problem at global scale while jointly representing energy, water, land and digital connectivity for new capacity.
 
-### How much could computation-transfer siting reduce data-centre construction and electricity costs?
-
-In the 2030 scenarios, computation-transfer siting lowers facility construction costs by 43.7–46.7% relative to local self-generation and electricity costs by 17.3–20.4% relative to local energy expansion. Facility construction excludes IT equipment. Source: Qu et al. (2026), arXiv:2610.35088; [PDF pp. 9, 20–21, 23; Sections 2.2.1, 3.4 and 4; Fig. 6](https://arxiv.org/pdf/2610.35088#page=9). [Full answer](QA.md#q3).
-
-### Does the modelled 37.9% reduction in new data-centre emissions include data transmission?
-
-Yes. Relative to local energy expansion, the reported 37.9% reduction compares 184.9 with 114.8 Mt CO₂ per year for new data-centre capacity in 2030; the latter includes 13.1 Mt from data transmission. Source: Qu et al. (2026), arXiv:2610.35088; [PDF pp. 2, 21–22; Abstract; Section 3.4; Fig. 7b and caption](https://arxiv.org/pdf/2610.35088#page=2). [Full answer](QA.md#q4).
-
-### Can moving computation to another region increase carbon emissions?
-
-Yes. In the reported Europe-to-North-Africa corridor, computation transfer increases annual CO₂ emissions by 16.8 Mt relative to local energy expansion. Source: Qu et al. (2026), arXiv:2610.35088; [PDF pp. 21–23; Fig. 7a; Sections 3.4 and 4](https://arxiv.org/pdf/2610.35088#page=21). [Full answer](QA.md#q5).
-
-### Which regions receive new AI data-centre capacity in the model?
-
-Canada, the Nordic countries, the Arabian Peninsula and Latin America accommodate much of the relocated capacity in the model; their shares depend on the scenario. Source: Qu et al. (2026), arXiv:2610.35088; [PDF pp. 19–20; Section 3.3; Fig. 5; Appendix Fig. 3](https://arxiv.org/pdf/2610.35088#page=19). [Full answer](QA.md#q6).
-
-### How does the study account for latency and workloads that must stay local?
-
-The model constrains relocation by workload-specific latency and retains computing capacity for workloads that must remain local. Source: Qu et al. (2026), arXiv:2610.35088; [PDF pp. 11, 13, 23; Sections 2.3.2, 2.3.4 and 4](https://arxiv.org/pdf/2610.35088#page=11). [Full answer](QA.md#q7).
-
-### What does the energy-digital-water-land nexus add to data-centre siting?
-
-The energy-digital-water-land nexus treats data-centre siting as a joint resource and infrastructure problem, rather than a choice based only on electricity prices or carbon intensity. Source: Qu et al. (2026), arXiv:2610.35088; [PDF pp. 5–13, 17; Sections 2.1–2.3 and 3.1](https://arxiv.org/pdf/2610.35088#page=5). [Full answer](QA.md#q8).
-
-### What does avoiding 34–67 GW of transmission capacity mean?
-
-The 34–67 GW estimate refers to avoided additional electricity-transmission capacity in the study comparison, not saved annual energy or relocated IT capacity. Source: Qu et al. (2026), arXiv:2610.35088; [PDF p. 21; Section 3.4; Appendix Fig. 5 and caption (p. 30)](https://arxiv.org/pdf/2610.35088#page=21). [Full answer](QA.md#q9).
-
-### What are the main limits on applying these results to real deployments?
-
-The results depend on scenario inputs and modelling boundaries, including the absence of explicit fibre-bandwidth limits and detailed cross-border security and compensation constraints. Source: Qu et al. (2026), arXiv:2610.35088; [PDF pp. 9, 22–23; Section 2.2.1; Uncertainty analysis; Section 4. Last sentence is an editorial implication of these limitations](https://arxiv.org/pdf/2610.35088#page=9). [Full answer](QA.md#q10).
+Related companion: [Right Model, Right Task](https://github.com/JAVIQU666/right-model-right-task). A complementary study of inference carbon emissions through model–task matching and capability requirements.
 
 ## Manuscript reporting note
 

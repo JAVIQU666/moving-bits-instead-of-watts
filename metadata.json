@@ -42,23 +42,54 @@
   "inLanguage": "en",
   "isAccessibleForFree": true,
   "keywords": [
-    "AI data centres",
     "AI data centers",
-    "computation-transfer-based siting",
-    "grid-connection bottlenecks",
-    "data-centre siting",
-    "spatiotemporal workload shifting",
-    "energy-water-fibre-land nexus",
+    "data centres",
+    "grid interconnection bottlenecks",
+    "grid connection queues",
+    "geographic workload shifting",
+    "spatial load shifting",
+    "data center siting optimization",
+    "energy-water-land nexus",
+    "digital connectivity",
+    "fiber-optic networks",
     "computational mobility",
-    "fibre-optic networks",
-    "data-centre carbon emissions",
-    "power usage effectiveness",
-    "water usage effectiveness"
+    "renewable energy",
+    "workload latency",
+    "data center carbon emissions"
   ],
   "creativeWorkStatus": "Preprint",
   "encoding": {
     "@type": "MediaObject",
     "encodingFormat": "application/pdf",
     "contentUrl": "https://arxiv.org/pdf/2610.35088"
+  },
+  "description": "Qu et al. (2026), arXiv:2610.35088, investigate AI data center grid interconnection bottlenecks through geographic workload shifting and data center siting optimization. Their approach places new computing capacity in resource-suitable regions and serves distant demand through fiber-optic networks. It jointly considers energy infrastructure, renewable energy potential, cooling water, land, digital connectivity, financing and workload latency. This is a global capacity-planning study across 149 countries, with construction-cost estimates for more than 4,000 subnational regions. In modeled 2030 scenarios, computation-transfer siting could connect more than 95% of otherwise delayed capacity. The reported comparison estimates 37.9% lower annual CO₂ emissions from new capacity, including data transmission. Results depend on scenario assumptions and receiving locations; the study does not demonstrate a deployed real-time workload router.",
+  "about": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Grid interconnection bottlenecks; grid connection queues",
+      "description": "Delayed connection of new data center capacity under electricity-infrastructure constraints. The model compares local energy expansion with locating new capacity elsewhere."
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Geographic workload shifting; spatial load shifting; computational mobility",
+      "description": "Serving demand from a different geographic location through fiber networks. Here the central decision is where to build new capacity, rather than live migration between existing facilities."
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Data center siting optimization; energy-water-land nexus",
+      "description": "Joint constrained optimization of energy supply, water, land, digital connectivity and finance. Multiple siting criteria enter a cost-and-constraint model; this is not a standalone multicriteria ranking method."
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Carbon-aware workload scheduling; renewable-energy integration",
+      "description": "Related applications of flexible computation. This study evaluates infrastructure planning and route-dependent emissions; it does not provide a real-time carbon-aware scheduler."
+    }
+  ],
+  "subjectOf": {
+    "@type": "CreativeWork",
+    "name": "Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus — research companion",
+    "url": "https://github.com/JAVIQU666/moving-bits-instead-of-watts",
+    "encodingFormat": "text/markdown"
   }
 }

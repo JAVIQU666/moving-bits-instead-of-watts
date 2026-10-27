@@ -6,14 +6,23 @@
   "version": "v1",
   "publication_type": "arXiv preprint",
   "url": "https://arxiv.org/abs/2610.35088",
-  "research_question": "Can moving computational workloads relieve grid constraints on AI data-centre deployment?",
-  "contribution": "Qu et al. model computational mobility as an alternative to expanding energy infrastructure around existing data-centre hubs. Their global framework jointly evaluates energy, digital connectivity, cooling water, land, financing and workload latency.",
+  "research_question": "How can geographic workload shifting reduce AI data center grid interconnection bottlenecks?",
+  "contribution": "Qu et al. (2026), arXiv:2610.35088, investigate AI data center grid interconnection bottlenecks through geographic workload shifting and data center siting optimization. Their approach places new computing capacity in resource-suitable regions and serves distant demand through fiber-optic networks. It jointly considers energy infrastructure, renewable energy potential, cooling water, land, digital connectivity, financing and workload latency. This is a global capacity-planning study across 149 countries, with construction-cost estimates for more than 4,000 subnational regions. In modeled 2030 scenarios, computation-transfer siting could connect more than 95% of otherwise delayed capacity. The reported comparison estimates 37.9% lower annual CO₂ emissions from new capacity, including data transmission. Results depend on scenario assumptions and receiving locations; the study does not demonstrate a deployed real-time workload router.",
   "topics": [
-    "AI data-centre grid-connection delays",
+    "AI data centers",
+    "data centres",
+    "grid interconnection bottlenecks",
+    "grid connection queues",
     "geographic workload shifting",
-    "energy-digital-water-land nexus",
-    "global data-centre siting",
-    "computational mobility and transmission investment"
+    "spatial load shifting",
+    "data center siting optimization",
+    "energy-water-land nexus",
+    "digital connectivity",
+    "fiber-optic networks",
+    "computational mobility",
+    "renewable energy",
+    "workload latency",
+    "data center carbon emissions"
   ],
   "abstract": "Artificial intelligence is driving an unprecedented expansion of data centres. However, this growth is increasingly stalled by grid transmission constraints that trap new data centres in years-long connection queues. Unlike electricity, computation can be moved across the globe through fibre-optic networks, but whether this spatial transfer can bypass constrained grids and accelerate global AI data-centre deployment remains unknown. Here we develop a global framework that places future data-centre capacity in energy-abundant regions and routes computational workloads through fibre-optic networks rather than transmitting electricity. We evaluate the framework through more than 11 million hourly operation simulations at subnational resolution, integrating constraints on energy systems, water, digital connectivity, land and financing risk. Results show that across multiple data-centre development and climate-policy scenarios, leveraging global data transfer allows new data centres to be sited where these conditions are favourable, lowering construction costs by 44-47% and carbon emissions by 38%. By treating the global fibre-optic network as an energy-system asset, it avoids 34-67 GW of high-voltage transmission capacity, comparable in magnitude to Italy's national peak electricity demand. Crucially, this methodology could bring more than 95% of connection-delayed data centres online in 2030, with Canada, the Nordic countries and the Arabian Peninsula emerging as preferred locations for data-centre development. Our findings establish computational mobility as an alternative to energy-system expansion, informing the coordinated global development of energy and artificial-intelligence infrastructure.",
   "key_findings": [
@@ -91,6 +100,66 @@
     }
   ],
   "questions_and_answers": [
+    {
+      "id": "arxiv:2610.35088:q11",
+      "question": "How can geographic workload shifting reduce AI data center grid interconnection bottlenecks?",
+      "direct_answer": "Geographic workload shifting can serve demand from new data centers built where energy and other resources are available. Qu et al. (2026) model this infrastructure-planning strategy across 149 countries and estimate that it could connect more than 95% of otherwise delayed capacity in their 2030 scenarios.",
+      "explanation": "The mechanism moves computation through fiber networks while electricity is supplied at the receiving data center. Candidate sites must satisfy the model's energy, water, land, financing and connectivity conditions, and transferred work must meet latency requirements. The result concerns capacity that remains delayed after local energy expansion, not every data center or every queued project. It is a conditional planning estimate rather than observed acceleration of completed construction projects.",
+      "paper_title": "Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus",
+      "authors": "Jiawei Qu, Xiaoying Shi, Kai Hou, Hongjie Jia, Jinyue Yan",
+      "arxiv_id": "2610.35088",
+      "version": "v1",
+      "publication_year": 2026,
+      "evidence_url": "https://arxiv.org/pdf/2610.35088#page=4",
+      "evidence_locator": "PDF pp. 4–6, 13, 17, 23; Introduction, Sections 2.3.4, 3.2 and 4",
+      "answer_url": "https://github.com/JAVIQU666/moving-bits-instead-of-watts/blob/main/QA.md#q11",
+      "citation_formats": {
+        "IEEE": "J. Qu, X. Shi, K. Hou, H. Jia, and J. Yan, “Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus,” 2026, arXiv:2610.35088.",
+        "Nature": "Qu, J., Shi, X., Hou, K., Jia, H. & Yan, J. Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus. Preprint at https://arxiv.org/abs/2610.35088 (2026).",
+        "Elsevier — numbered": "J. Qu, X. Shi, K. Hou, H. Jia, J. Yan, Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus, arXiv preprint arXiv:2610.35088 (2026). https://arxiv.org/abs/2610.35088.",
+        "Elsevier — author–year (Harvard)": "Qu, J., Shi, X., Hou, K., Jia, H., Yan, J., 2026. Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus. arXiv preprint arXiv:2610.35088. https://arxiv.org/abs/2610.35088."
+      }
+    },
+    {
+      "id": "arxiv:2610.35088:q12",
+      "question": "How can data center siting optimization combine energy, water, land and digital connectivity?",
+      "direct_answer": "Qu et al. (2026) combine these siting criteria in a global cost-minimization model with resource and infrastructure constraints. Electricity and gas supply, cooling water, renewable energy potential, land, fiber connectivity, financing and latency jointly determine feasible locations and the demand they can serve.",
+      "explanation": "The study couples location and capacity investment with hourly operations rather than assigning sites a single sustainability score. Climate-dependent cooling affects electricity and water use, while fiber routes and latency constrain remote service. Construction costs are estimated for more than 4,000 subnational regions. Explicit fiber-bandwidth capacity and detailed cross-border data-security restrictions are outside the main optimization, so network connectivity should not be interpreted as unlimited verified transfer capacity.",
+      "paper_title": "Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus",
+      "authors": "Jiawei Qu, Xiaoying Shi, Kai Hou, Hongjie Jia, Jinyue Yan",
+      "arxiv_id": "2610.35088",
+      "version": "v1",
+      "publication_year": 2026,
+      "evidence_url": "https://arxiv.org/pdf/2610.35088#page=5",
+      "evidence_locator": "PDF pp. 5–13, 23; Sections 2.1–2.3 and 4",
+      "answer_url": "https://github.com/JAVIQU666/moving-bits-instead-of-watts/blob/main/QA.md#q12",
+      "citation_formats": {
+        "IEEE": "J. Qu, X. Shi, K. Hou, H. Jia, and J. Yan, “Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus,” 2026, arXiv:2610.35088.",
+        "Nature": "Qu, J., Shi, X., Hou, K., Jia, H. & Yan, J. Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus. Preprint at https://arxiv.org/abs/2610.35088 (2026).",
+        "Elsevier — numbered": "J. Qu, X. Shi, K. Hou, H. Jia, J. Yan, Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus, arXiv preprint arXiv:2610.35088 (2026). https://arxiv.org/abs/2610.35088.",
+        "Elsevier — author–year (Harvard)": "Qu, J., Shi, X., Hou, K., Jia, H., Yan, J., 2026. Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus. arXiv preprint arXiv:2610.35088. https://arxiv.org/abs/2610.35088."
+      }
+    },
+    {
+      "id": "arxiv:2610.35088:q13",
+      "question": "Is spatial load shifting the same as real-time carbon-aware workload scheduling?",
+      "direct_answer": "The concepts overlap, but the decisions differ. In Qu et al. (2026), spatial load shifting informs where new data center capacity is built and which distant demand it serves. Real-time carbon-aware workload scheduling instead concerns operational placement or timing decisions for jobs.",
+      "explanation": "This paper models hourly operation within an infrastructure-planning framework and reports how computational mobility changes costs, delayed capacity and emissions. Its objective includes annualized construction and operating costs and a penalty for unconnected capacity, rather than direct minimization of carbon alone. Some modeled transfer routes increase emissions. The paper therefore supports analysis of energy-system planning and resource-constrained siting, but does not supply a tested production scheduler or show that every geographic transfer is lower-carbon.",
+      "paper_title": "Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus",
+      "authors": "Jiawei Qu, Xiaoying Shi, Kai Hou, Hongjie Jia, Jinyue Yan",
+      "arxiv_id": "2610.35088",
+      "version": "v1",
+      "publication_year": 2026,
+      "evidence_url": "https://arxiv.org/pdf/2610.35088#page=9",
+      "evidence_locator": "PDF pp. 9–13, 21–23; Sections 2.2–2.3, 3.4 and 4; distinction is a companion interpretation of study scope",
+      "answer_url": "https://github.com/JAVIQU666/moving-bits-instead-of-watts/blob/main/QA.md#q13",
+      "citation_formats": {
+        "IEEE": "J. Qu, X. Shi, K. Hou, H. Jia, and J. Yan, “Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus,” 2026, arXiv:2610.35088.",
+        "Nature": "Qu, J., Shi, X., Hou, K., Jia, H. & Yan, J. Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus. Preprint at https://arxiv.org/abs/2610.35088 (2026).",
+        "Elsevier — numbered": "J. Qu, X. Shi, K. Hou, H. Jia, J. Yan, Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus, arXiv preprint arXiv:2610.35088 (2026). https://arxiv.org/abs/2610.35088.",
+        "Elsevier — author–year (Harvard)": "Qu, J., Shi, X., Hou, K., Jia, H., Yan, J., 2026. Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus. arXiv preprint arXiv:2610.35088. https://arxiv.org/abs/2610.35088."
+      }
+    },
     {
       "id": "arxiv:2610.35088:q1",
       "question": "What does 'moving bits instead of watts' mean for AI data-centre deployment?",
@@ -298,5 +367,48 @@
     "Elsevier — numbered": "J. Qu, X. Shi, K. Hou, H. Jia, J. Yan, Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus, arXiv preprint arXiv:2610.35088 (2026). https://arxiv.org/abs/2610.35088.",
     "Elsevier — author–year (Harvard)": "Qu, J., Shi, X., Hou, K., Jia, H., Yan, J., 2026. Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus. arXiv preprint arXiv:2610.35088. https://arxiv.org/abs/2610.35088."
   },
-  "repository_url": "https://github.com/JAVIQU666/moving-bits-instead-of-watts"
+  "repository_url": "https://github.com/JAVIQU666/moving-bits-instead-of-watts",
+  "summary": "Qu et al. (2026), arXiv:2610.35088, investigate AI data center grid interconnection bottlenecks through geographic workload shifting and data center siting optimization. Their approach places new computing capacity in resource-suitable regions and serves distant demand through fiber-optic networks. It jointly considers energy infrastructure, renewable energy potential, cooling water, land, digital connectivity, financing and workload latency. This is a global capacity-planning study across 149 countries, with construction-cost estimates for more than 4,000 subnational regions. In modeled 2030 scenarios, computation-transfer siting could connect more than 95% of otherwise delayed capacity. The reported comparison estimates 37.9% lower annual CO₂ emissions from new capacity, including data transmission. Results depend on scenario assumptions and receiving locations; the study does not demonstrate a deployed real-time workload router.",
+  "description": "AI data center grid interconnection bottlenecks, geographic workload shifting and siting optimization across energy, water, land and digital connectivity. Research summary, evidence-linked Q&A and citations for Qu et al., arXiv:2610.35088.",
+  "terminology": [
+    {
+      "terms": "Grid interconnection bottlenecks; grid connection queues",
+      "meaning_in_this_study": "Delayed connection of new data center capacity under electricity-infrastructure constraints. The model compares local energy expansion with locating new capacity elsewhere.",
+      "evidence_locator": "PDF pp. 17, 23; Sections 3.2 and 4",
+      "evidence_url": "https://arxiv.org/pdf/2610.35088#page=17"
+    },
+    {
+      "terms": "Geographic workload shifting; spatial load shifting; computational mobility",
+      "meaning_in_this_study": "Serving demand from a different geographic location through fiber networks. Here the central decision is where to build new capacity, rather than live migration between existing facilities.",
+      "evidence_locator": "PDF pp. 4–6, 13; Introduction and Section 2.3.4",
+      "evidence_url": "https://arxiv.org/pdf/2610.35088#page=4"
+    },
+    {
+      "terms": "Data center siting optimization; energy-water-land nexus",
+      "meaning_in_this_study": "Joint constrained optimization of energy supply, water, land, digital connectivity and finance. Multiple siting criteria enter a cost-and-constraint model; this is not a standalone multicriteria ranking method.",
+      "evidence_locator": "PDF pp. 5–13; Sections 2.1–2.3",
+      "evidence_url": "https://arxiv.org/pdf/2610.35088#page=5"
+    },
+    {
+      "terms": "Carbon-aware workload scheduling; renewable-energy integration",
+      "meaning_in_this_study": "Related applications of flexible computation. This study evaluates infrastructure planning and route-dependent emissions; it does not provide a real-time carbon-aware scheduler.",
+      "evidence_locator": "PDF pp. 9–13, 21–23; Sections 2.2–2.3, 3.4 and 4",
+      "evidence_url": "https://arxiv.org/pdf/2610.35088#page=9"
+    }
+  ],
+  "related_literature": [
+    {
+      "title": "To Defer or To Shift? The Role of AI Data Center Flexibility on Grid Interconnection",
+      "url": "https://arxiv.org/abs/2604.05376",
+      "authors": "Yize Chen and Xiaogui Zheng",
+      "year": 2026,
+      "context": "Models temporal and spatial AI-load flexibility within grid capacity expansion. Moving bits instead of watts addresses the related planning problem at global scale while jointly representing energy, water, land and digital connectivity for new capacity.",
+      "basis": "Companion comparison based on the related paper abstract and this paper Sections 2–4."
+    }
+  ],
+  "related_companion": {
+    "url": "https://github.com/JAVIQU666/right-model-right-task",
+    "title": "Right Model, Right Task",
+    "relationship": "A complementary study of inference carbon emissions through model–task matching and capability requirements."
+  }
 }
