@@ -1,0 +1,64 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "@id": "https://arxiv.org/abs/2610.35088",
+  "name": "Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus",
+  "headline": "Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jiawei Qu"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiaoying Shi"
+    },
+    {
+      "@type": "Person",
+      "name": "Kai Hou"
+    },
+    {
+      "@type": "Person",
+      "name": "Hongjie Jia"
+    },
+    {
+      "@type": "Person",
+      "name": "Jinyue Yan"
+    }
+  ],
+  "abstract": "Artificial intelligence is driving an unprecedented expansion of data centres. However, this growth is increasingly stalled by grid transmission constraints that trap new data centres in years-long connection queues. Unlike electricity, computation can be moved across the globe through fibre-optic networks, but whether this spatial transfer can bypass constrained grids and accelerate global AI data-centre deployment remains unknown. Here we develop a global framework that places future data-centre capacity in energy-abundant regions and routes computational workloads through fibre-optic networks rather than transmitting electricity. We evaluate the framework through more than 11 million hourly operation simulations at subnational resolution, integrating constraints on energy systems, water, digital connectivity, land and financing risk. Results show that across multiple data-centre development and climate-policy scenarios, leveraging global data transfer allows new data centres to be sited where these conditions are favourable, lowering construction costs by 44-47% and carbon emissions by 38%. By treating the global fibre-optic network as an energy-system asset, it avoids 34-67 GW of high-voltage transmission capacity, comparable in magnitude to Italy's national peak electricity demand. Crucially, this methodology could bring more than 95% of connection-delayed data centres online in 2030, with Canada, the Nordic countries and the Arabian Peninsula emerging as preferred locations for data-centre development. Our findings establish computational mobility as an alternative to energy-system expansion, informing the coordinated global development of energy and artificial-intelligence infrastructure.",
+  "identifier": [
+    "arXiv:2610.35088",
+    {
+      "@type": "PropertyValue",
+      "propertyID": "DOI",
+      "value": "10.48550/arXiv.2610.35088",
+      "description": "Listed by arXiv; marked pending registration at verification on 2026-10-27"
+    }
+  ],
+  "datePublished": "2026-10-26",
+  "url": "https://arxiv.org/pdf/2610.35088",
+  "version": "1",
+  "inLanguage": "en",
+  "isAccessibleForFree": true,
+  "keywords": [
+    "AI data centres",
+    "AI data centers",
+    "computation-transfer-based siting",
+    "grid-connection bottlenecks",
+    "data-centre siting",
+    "spatiotemporal workload shifting",
+    "energy-water-fibre-land nexus",
+    "computational mobility",
+    "fibre-optic networks",
+    "data-centre carbon emissions",
+    "power usage effectiveness",
+    "water usage effectiveness"
+  ],
+  "creativeWorkStatus": "Preprint",
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.35088"
+  }
+}

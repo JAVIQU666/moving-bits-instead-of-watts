@@ -1,0 +1,302 @@
+{
+  "title": "Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus",
+  "arxiv_id": "2610.35088",
+  "authors": "Jiawei Qu, Xiaoying Shi, Kai Hou, Hongjie Jia, Jinyue Yan",
+  "year": 2026,
+  "version": "v1",
+  "publication_type": "arXiv preprint",
+  "url": "https://arxiv.org/abs/2610.35088",
+  "research_question": "Can moving computational workloads relieve grid constraints on AI data-centre deployment?",
+  "contribution": "Qu et al. model computational mobility as an alternative to expanding energy infrastructure around existing data-centre hubs. Their global framework jointly evaluates energy, digital connectivity, cooling water, land, financing and workload latency.",
+  "topics": [
+    "AI data-centre grid-connection delays",
+    "geographic workload shifting",
+    "energy-digital-water-land nexus",
+    "global data-centre siting",
+    "computational mobility and transmission investment"
+  ],
+  "abstract": "Artificial intelligence is driving an unprecedented expansion of data centres. However, this growth is increasingly stalled by grid transmission constraints that trap new data centres in years-long connection queues. Unlike electricity, computation can be moved across the globe through fibre-optic networks, but whether this spatial transfer can bypass constrained grids and accelerate global AI data-centre deployment remains unknown. Here we develop a global framework that places future data-centre capacity in energy-abundant regions and routes computational workloads through fibre-optic networks rather than transmitting electricity. We evaluate the framework through more than 11 million hourly operation simulations at subnational resolution, integrating constraints on energy systems, water, digital connectivity, land and financing risk. Results show that across multiple data-centre development and climate-policy scenarios, leveraging global data transfer allows new data centres to be sited where these conditions are favourable, lowering construction costs by 44-47% and carbon emissions by 38%. By treating the global fibre-optic network as an energy-system asset, it avoids 34-67 GW of high-voltage transmission capacity, comparable in magnitude to Italy's national peak electricity demand. Crucially, this methodology could bring more than 95% of connection-delayed data centres online in 2030, with Canada, the Nordic countries and the Arabian Peninsula emerging as preferred locations for data-centre development. Our findings establish computational mobility as an alternative to energy-system expansion, informing the coordinated global development of energy and artificial-intelligence infrastructure.",
+  "key_findings": [
+    {
+      "text": "In the modelled 2030 scenarios, local energy expansion leaves 10–15% of global data-centre capacity connection-delayed. Computation-transfer-based siting could bring more than 95% of that delayed capacity online. The denominator is delayed capacity, not all global data-centre capacity or a count of individual facilities.",
+      "source": "PDF pp. 17, 23; Sections 3.2 and 4; Appendix Fig. 1 (p. 27)"
+    },
+    {
+      "text": "For 2030 deployment, the paper reports 43.7–46.7% lower facility construction costs and 17.3–20.4% lower levelized electricity costs under computation-transfer siting relative to local energy expansion. The construction comparison in Section 3.4 is specifically described against local self-generation. Facility construction costs exclude servers, networking hardware, AI accelerators, software and tenant-owned IT equipment.",
+      "source": "PDF pp. 9, 20–21, 23; Sections 2.2.1, 3.4 and 4; Fig. 6"
+    },
+    {
+      "text": "The reported global 2030 emissions comparison for new data-centre capacity falls from 184.9 to 114.8 Mt CO₂ per year, a 37.9% reduction relative to local energy expansion. The latter total comprises 101.7 Mt from the relocated capacity and 13.1 Mt from data transmission. This is not a stated reduction in all global data-centre emissions or a full life-cycle carbon estimate.",
+      "source": "PDF pp. 21–22; Section 3.4; Fig. 7b and caption"
+    },
+    {
+      "text": "Relative to expanding transmission around existing demand hubs, computation-transfer siting avoids approximately 34–67 GW of additional transmission capacity in the study's comparison. Appendix Fig. 5 expresses the central capacity comparison at a 200 km equivalent transmission distance and explores distance and redundancy assumptions; this metric is not data-centre IT capacity or annual electricity savings.",
+      "source": "PDF p. 21; Section 3.4; Appendix Fig. 5 and caption (p. 30)"
+    },
+    {
+      "text": "Receiving locations vary with demand growth. In the Headwinds scenario, Canada hosts 46.7% of globally relocated capacity; in the Lift-Off scenario this share falls to 29.3%. Canada, Nordic countries, the Arabian Peninsula and Latin America accommodate much of the relocated capacity in the study, subject to the model's resource, latency and financing conditions.",
+      "source": "PDF pp. 19–20; Section 3.3; Fig. 5 and Appendix Fig. 3"
+    },
+    {
+      "text": "Lower global emissions do not imply benefits on every transfer route. The reported Europe-to-North-Africa corridor increases annual emissions by 16.8 Mt CO₂ relative to local energy expansion. The study therefore calls for coordinated carbon accounting and environmental responsibility across sending and receiving regions.",
+      "source": "PDF pp. 22–23; Section 3.4, Fig. 7a and Section 4"
+    }
+  ],
+  "methodology": [
+    {
+      "text": "The study establishes a 2025 baseline from 12,445 reported data-centre clusters and evaluates deployment and operation in 2030. It combines four IEA-derived data-centre pathways—Headwinds, High Efficiency, Base and Lift-Off—with nine climate-policy pathways, yielding 36 scenario combinations. The paper reports more than 11 million hourly operational simulations across subnational regions; these should not be described as 11 million independent future scenarios.",
+      "source": "PDF pp. 5–7, 13–14; Sections 2, 2.1.1–2.1.2 and 3; Table 1"
+    },
+    {
+      "text": "Construction costs are estimated for more than 4,000 first-order administrative regions. The siting framework spans 149 countries, with detailed subnational treatment in major data-centre markets and a single national power-system node for other countries. Its infrastructure inputs include more than 240,000 high-voltage lines, natural-gas networks, terrestrial and submarine fibre links, water availability, industrial land prices and renewable-energy potential.",
+      "source": "PDF pp. 4–9; Fig. 1 and Sections 2.1.1–2.1.6"
+    },
+    {
+      "text": "The hourly optimization links siting and capacity investment to operating decisions. It minimizes annualized construction and operating costs plus a penalty for unconnected capacity, subject to electricity balance, transmission, generation, storage, water, land and connectivity constraints. It considers grid-supplied and self-generation facilities, local and multinational financing, and excludes candidate locations that fail its financial feasibility screen.",
+      "source": "PDF pp. 9–13; Sections 2.2–2.3; equations (2)–(35)"
+    },
+    {
+      "text": "The model distinguishes fully flexible workloads, latency-constrained workloads and an assumed 5% of ultra-low-latency demand that stays local. Fully flexible shares are set to 10% for non-accelerated-server workloads and 25% for accelerated-server workloads. The latter proxy for AI-related workloads accounts for 15% of total data-centre electricity demand in the model. Latency-sensitive transfer uses a 100 ms service threshold, with 5 ms processing delay and an assumed fibre-route inflation factor of 1.2.",
+      "source": "PDF pp. 11, 13; Sections 2.3.2 and 2.3.4; equations (9)–(15) and (30)"
+    },
+    {
+      "text": "Ten representative cooling configurations receive climate-dependent power-usage effectiveness and water-usage effectiveness estimates. Facility-cost estimates are compared with public estimates for 51 major markets, producing a reported global normalized deviation of 11.5%. The authors describe this as an external consistency check because modelled subnational regions and observed city markets are not identical units.",
+      "source": "PDF pp. 7, 9–10, 16–17; Sections 2.1.2, 2.2.1 and 3.1"
+    }
+  ],
+  "limitations": [
+    {
+      "text": "Author-stated boundary condition: the main optimization does not impose explicit fibre-network capacity constraints. The authors note that some individual corridors, including ARCOS, could become constrained under a bandwidth-intensive multimodal-transfer scenario despite sufficient aggregate submarine-cable capacity.",
+      "source": "PDF p. 23; Section 4, referring to Supplementary Text 8"
+    },
+    {
+      "text": "Author-stated boundary condition: outcomes depend on workload flexibility and service latency requirements. The authors report sensitivity tests, but these do not establish that every application can be relocated or that the assumed workload mix describes every operator. The model explicitly reserves ultra-low-latency demand for local service.",
+      "source": "PDF pp. 11, 13, 23; Sections 2.3.2, 2.3.4 and 4"
+    },
+    {
+      "text": "Author-stated boundary condition: cross-border energy security, data security and environmental compensation are not explicitly modelled. The paper identifies regulatory coordination and governance of cross-border data flows as conditions for realizing the estimated potential.",
+      "source": "PDF p. 23; Section 4"
+    },
+    {
+      "text": "Scope and interpretation: the reported results are scenario-based estimates for future deployment, not measured outcomes of completed projects. The study models power networks at different geographic resolutions; outside major data-centre countries, national aggregation cannot resolve every local connection bottleneck.",
+      "source": "PDF pp. 6–7, 13–14, 23; Sections 2.1.1, 2.1.3, 3 and 4. Editorial interpretation of the stated modelling scope"
+    },
+    {
+      "text": "Scope and interpretation: construction-cost savings apply to the defined facility-side cost boundary and exclude computing equipment. The reported emissions comparison covers annual emissions associated with new capacity and data transfer; it should not be presented as a verified full life-cycle footprint including manufacture of servers and buildings.",
+      "source": "PDF pp. 9, 15, 21–22; Section 2.2.1; Fig. 2 caption; Section 3.4 and Fig. 7. Editorial interpretation of the stated accounting boundaries"
+    },
+    {
+      "text": "Author-reported trade-off: optimization can shift environmental burdens to receiving regions, and some transfer corridors increase emissions. Therefore the economically preferred site is not necessarily the lowest-carbon location, and the global average benefit should not be used to predict the outcome for a particular facility or route.",
+      "source": "PDF pp. 22–23; Section 3.4 and Section 4. Final sentence is an editorial interpretation of the reported regional heterogeneity"
+    }
+  ],
+  "questions_and_answers": [
+    {
+      "id": "arxiv:2610.35088:q1",
+      "question": "What does 'moving bits instead of watts' mean for AI data-centre deployment?",
+      "direct_answer": "Moving bits instead of watts means locating new AI computing capacity where energy and other resources are favourable, then serving distant demand through fibre networks.",
+      "explanation": "It means placing future data-centre capacity in locations with suitable energy, water, land and digital connectivity, then serving computational demand through fibre networks. The study compares this strategy with expanding energy infrastructure around existing demand hubs. Its decision is where new capacity should be built and which demand it should serve; it is not simply the live migration of running workloads between existing facilities. Electricity is still required at the receiving data centre.",
+      "paper_title": "Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus",
+      "authors": "Jiawei Qu, Xiaoying Shi, Kai Hou, Hongjie Jia, Jinyue Yan",
+      "arxiv_id": "2610.35088",
+      "version": "v1",
+      "publication_year": 2026,
+      "evidence_url": "https://arxiv.org/pdf/2610.35088#page=4",
+      "evidence_locator": "PDF pp. 4–6, 13, 19; Introduction, Section 2, Section 2.3.4 and Section 3.3",
+      "answer_url": "https://github.com/JAVIQU666/moving-bits-instead-of-watts/blob/main/QA.md#q1",
+      "citation_formats": {
+        "IEEE": "J. Qu, X. Shi, K. Hou, H. Jia, and J. Yan, “Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus,” 2026, arXiv:2610.35088.",
+        "Nature": "Qu, J., Shi, X., Hou, K., Jia, H. & Yan, J. Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus. Preprint at https://arxiv.org/abs/2610.35088 (2026).",
+        "Elsevier — numbered": "J. Qu, X. Shi, K. Hou, H. Jia, J. Yan, Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus, arXiv preprint arXiv:2610.35088 (2026). https://arxiv.org/abs/2610.35088.",
+        "Elsevier — author–year (Harvard)": "Qu, J., Shi, X., Hou, K., Jia, H., Yan, J., 2026. Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus. arXiv preprint arXiv:2610.35088. https://arxiv.org/abs/2610.35088."
+      }
+    },
+    {
+      "id": "arxiv:2610.35088:q2",
+      "question": "Can computation transfer relieve AI data-centre grid-connection delays?",
+      "direct_answer": "The 2030 model estimates that computation-transfer siting could connect more than 95% of capacity left delayed under local energy expansion; it does not establish that all grid-connection delays disappear.",
+      "explanation": "The model estimates substantial relief, rather than universal elimination. Under its 2030 scenarios, 10–15% of global data-centre capacity remains delayed after local energy expansion; computation-transfer siting could connect more than 95% of that delayed capacity. This is a conditional modelling result for capacity, not evidence that individual queued projects have already been connected. Real deployment also depends on workload requirements, viable receiving locations and cross-border conditions that the main optimization does not fully represent.",
+      "paper_title": "Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus",
+      "authors": "Jiawei Qu, Xiaoying Shi, Kai Hou, Hongjie Jia, Jinyue Yan",
+      "arxiv_id": "2610.35088",
+      "version": "v1",
+      "publication_year": 2026,
+      "evidence_url": "https://arxiv.org/pdf/2610.35088#page=17",
+      "evidence_locator": "PDF pp. 17, 23; Sections 3.2 and 4; Appendix Fig. 1",
+      "answer_url": "https://github.com/JAVIQU666/moving-bits-instead-of-watts/blob/main/QA.md#q2",
+      "citation_formats": {
+        "IEEE": "J. Qu, X. Shi, K. Hou, H. Jia, and J. Yan, “Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus,” 2026, arXiv:2610.35088.",
+        "Nature": "Qu, J., Shi, X., Hou, K., Jia, H. & Yan, J. Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus. Preprint at https://arxiv.org/abs/2610.35088 (2026).",
+        "Elsevier — numbered": "J. Qu, X. Shi, K. Hou, H. Jia, J. Yan, Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus, arXiv preprint arXiv:2610.35088 (2026). https://arxiv.org/abs/2610.35088.",
+        "Elsevier — author–year (Harvard)": "Qu, J., Shi, X., Hou, K., Jia, H., Yan, J., 2026. Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus. arXiv preprint arXiv:2610.35088. https://arxiv.org/abs/2610.35088."
+      }
+    },
+    {
+      "id": "arxiv:2610.35088:q3",
+      "question": "How much could computation-transfer siting reduce data-centre construction and electricity costs?",
+      "direct_answer": "In the 2030 scenarios, computation-transfer siting lowers facility construction costs by 43.7–46.7% relative to local self-generation and electricity costs by 17.3–20.4% relative to local energy expansion. Facility construction excludes IT equipment.",
+      "explanation": "The paper's reported global 2030 results give construction-cost reductions of 43.7–46.7% and levelized electricity-cost reductions of 17.3–20.4% for computation-transfer siting relative to local energy expansion. Section 3.4 describes the construction comparison against local self-generation. These are modelled outcomes across development scenarios, not guaranteed project savings. Construction costs cover the facility and relevant infrastructure adjustments; they exclude servers, networking hardware, AI accelerators, software and tenant-owned IT equipment.",
+      "paper_title": "Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus",
+      "authors": "Jiawei Qu, Xiaoying Shi, Kai Hou, Hongjie Jia, Jinyue Yan",
+      "arxiv_id": "2610.35088",
+      "version": "v1",
+      "publication_year": 2026,
+      "evidence_url": "https://arxiv.org/pdf/2610.35088#page=9",
+      "evidence_locator": "PDF pp. 9, 20–21, 23; Sections 2.2.1, 3.4 and 4; Fig. 6",
+      "answer_url": "https://github.com/JAVIQU666/moving-bits-instead-of-watts/blob/main/QA.md#q3",
+      "citation_formats": {
+        "IEEE": "J. Qu, X. Shi, K. Hou, H. Jia, and J. Yan, “Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus,” 2026, arXiv:2610.35088.",
+        "Nature": "Qu, J., Shi, X., Hou, K., Jia, H. & Yan, J. Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus. Preprint at https://arxiv.org/abs/2610.35088 (2026).",
+        "Elsevier — numbered": "J. Qu, X. Shi, K. Hou, H. Jia, J. Yan, Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus, arXiv preprint arXiv:2610.35088 (2026). https://arxiv.org/abs/2610.35088.",
+        "Elsevier — author–year (Harvard)": "Qu, J., Shi, X., Hou, K., Jia, H., Yan, J., 2026. Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus. arXiv preprint arXiv:2610.35088. https://arxiv.org/abs/2610.35088."
+      }
+    },
+    {
+      "id": "arxiv:2610.35088:q4",
+      "question": "Does the modelled 37.9% reduction in new data-centre emissions include data transmission?",
+      "direct_answer": "Yes. Relative to local energy expansion, the reported 37.9% reduction compares 184.9 with 114.8 Mt CO₂ per year for new data-centre capacity in 2030; the latter includes 13.1 Mt from data transmission.",
+      "explanation": "Yes. In the paper's reported global comparison for new capacity in 2030, annual emissions decline from 184.9 to 114.8 Mt CO₂ relative to local energy expansion, a 37.9% reduction rounded to 38% in the abstract. The destination-side total is 101.7 Mt, with another 13.1 Mt attributed to data transmission. The percentage applies to this modelled comparison for new capacity; it is not a claim about all existing data centres or a complete life-cycle assessment.",
+      "paper_title": "Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus",
+      "authors": "Jiawei Qu, Xiaoying Shi, Kai Hou, Hongjie Jia, Jinyue Yan",
+      "arxiv_id": "2610.35088",
+      "version": "v1",
+      "publication_year": 2026,
+      "evidence_url": "https://arxiv.org/pdf/2610.35088#page=2",
+      "evidence_locator": "PDF pp. 2, 21–22; Abstract; Section 3.4; Fig. 7b and caption",
+      "answer_url": "https://github.com/JAVIQU666/moving-bits-instead-of-watts/blob/main/QA.md#q4",
+      "citation_formats": {
+        "IEEE": "J. Qu, X. Shi, K. Hou, H. Jia, and J. Yan, “Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus,” 2026, arXiv:2610.35088.",
+        "Nature": "Qu, J., Shi, X., Hou, K., Jia, H. & Yan, J. Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus. Preprint at https://arxiv.org/abs/2610.35088 (2026).",
+        "Elsevier — numbered": "J. Qu, X. Shi, K. Hou, H. Jia, J. Yan, Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus, arXiv preprint arXiv:2610.35088 (2026). https://arxiv.org/abs/2610.35088.",
+        "Elsevier — author–year (Harvard)": "Qu, J., Shi, X., Hou, K., Jia, H., Yan, J., 2026. Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus. arXiv preprint arXiv:2610.35088. https://arxiv.org/abs/2610.35088."
+      }
+    },
+    {
+      "id": "arxiv:2610.35088:q5",
+      "question": "Can moving computation to another region increase carbon emissions?",
+      "direct_answer": "Yes. In the reported Europe-to-North-Africa corridor, computation transfer increases annual CO₂ emissions by 16.8 Mt relative to local energy expansion.",
+      "explanation": "Yes. Siting responds to several resource and cost constraints, so an attractive destination is not necessarily cleaner than the demand-origin region. The paper reports that the Europe-to-North-Africa route increases annual emissions by 16.8 Mt CO₂ relative to local energy expansion, even while the global comparison shows a reduction. This illustrates why route-specific electricity mixes, generation choices and transmission emissions matter, and why receiving regions' environmental burdens require explicit accounting.",
+      "paper_title": "Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus",
+      "authors": "Jiawei Qu, Xiaoying Shi, Kai Hou, Hongjie Jia, Jinyue Yan",
+      "arxiv_id": "2610.35088",
+      "version": "v1",
+      "publication_year": 2026,
+      "evidence_url": "https://arxiv.org/pdf/2610.35088#page=21",
+      "evidence_locator": "PDF pp. 21–23; Fig. 7a; Sections 3.4 and 4",
+      "answer_url": "https://github.com/JAVIQU666/moving-bits-instead-of-watts/blob/main/QA.md#q5",
+      "citation_formats": {
+        "IEEE": "J. Qu, X. Shi, K. Hou, H. Jia, and J. Yan, “Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus,” 2026, arXiv:2610.35088.",
+        "Nature": "Qu, J., Shi, X., Hou, K., Jia, H. & Yan, J. Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus. Preprint at https://arxiv.org/abs/2610.35088 (2026).",
+        "Elsevier — numbered": "J. Qu, X. Shi, K. Hou, H. Jia, J. Yan, Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus, arXiv preprint arXiv:2610.35088 (2026). https://arxiv.org/abs/2610.35088.",
+        "Elsevier — author–year (Harvard)": "Qu, J., Shi, X., Hou, K., Jia, H., Yan, J., 2026. Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus. arXiv preprint arXiv:2610.35088. https://arxiv.org/abs/2610.35088."
+      }
+    },
+    {
+      "id": "arxiv:2610.35088:q6",
+      "question": "Which regions receive new AI data-centre capacity in the model?",
+      "direct_answer": "Canada, the Nordic countries, the Arabian Peninsula and Latin America accommodate much of the relocated capacity in the model; their shares depend on the scenario.",
+      "explanation": "The reported receiving regions include Canada, Nordic countries, the Arabian Peninsula and Latin America, while much of the relocated capacity originates in the United States and Europe. Rankings depend on the scenario and constraints. For example, Canada's share of globally relocated capacity is 46.7% in the Headwinds scenario and 29.3% in the Lift-Off scenario. These are optimized scenario allocations for future capacity, not observed investment commitments or a universal list of suitable sites.",
+      "paper_title": "Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus",
+      "authors": "Jiawei Qu, Xiaoying Shi, Kai Hou, Hongjie Jia, Jinyue Yan",
+      "arxiv_id": "2610.35088",
+      "version": "v1",
+      "publication_year": 2026,
+      "evidence_url": "https://arxiv.org/pdf/2610.35088#page=19",
+      "evidence_locator": "PDF pp. 19–20; Section 3.3; Fig. 5; Appendix Fig. 3",
+      "answer_url": "https://github.com/JAVIQU666/moving-bits-instead-of-watts/blob/main/QA.md#q6",
+      "citation_formats": {
+        "IEEE": "J. Qu, X. Shi, K. Hou, H. Jia, and J. Yan, “Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus,” 2026, arXiv:2610.35088.",
+        "Nature": "Qu, J., Shi, X., Hou, K., Jia, H. & Yan, J. Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus. Preprint at https://arxiv.org/abs/2610.35088 (2026).",
+        "Elsevier — numbered": "J. Qu, X. Shi, K. Hou, H. Jia, J. Yan, Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus, arXiv preprint arXiv:2610.35088 (2026). https://arxiv.org/abs/2610.35088.",
+        "Elsevier — author–year (Harvard)": "Qu, J., Shi, X., Hou, K., Jia, H., Yan, J., 2026. Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus. arXiv preprint arXiv:2610.35088. https://arxiv.org/abs/2610.35088."
+      }
+    },
+    {
+      "id": "arxiv:2610.35088:q7",
+      "question": "How does the study account for latency and workloads that must stay local?",
+      "direct_answer": "The model constrains relocation by workload-specific latency and retains computing capacity for workloads that must remain local.",
+      "explanation": "The model separates fully flexible work from latency-constrained work and ultra-low-latency work. It assumes 5% of computing demand stays local, while latency-sensitive remote service uses a 100 ms threshold with network and processing delays. Fully flexible shares differ between accelerated and non-accelerated servers. The authors also test tighter latency limits. These assumptions make workload suitability central: the results should not be interpreted as permission to move every interactive or safety-critical service across continents.",
+      "paper_title": "Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus",
+      "authors": "Jiawei Qu, Xiaoying Shi, Kai Hou, Hongjie Jia, Jinyue Yan",
+      "arxiv_id": "2610.35088",
+      "version": "v1",
+      "publication_year": 2026,
+      "evidence_url": "https://arxiv.org/pdf/2610.35088#page=11",
+      "evidence_locator": "PDF pp. 11, 13, 23; Sections 2.3.2, 2.3.4 and 4",
+      "answer_url": "https://github.com/JAVIQU666/moving-bits-instead-of-watts/blob/main/QA.md#q7",
+      "citation_formats": {
+        "IEEE": "J. Qu, X. Shi, K. Hou, H. Jia, and J. Yan, “Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus,” 2026, arXiv:2610.35088.",
+        "Nature": "Qu, J., Shi, X., Hou, K., Jia, H. & Yan, J. Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus. Preprint at https://arxiv.org/abs/2610.35088 (2026).",
+        "Elsevier — numbered": "J. Qu, X. Shi, K. Hou, H. Jia, J. Yan, Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus, arXiv preprint arXiv:2610.35088 (2026). https://arxiv.org/abs/2610.35088.",
+        "Elsevier — author–year (Harvard)": "Qu, J., Shi, X., Hou, K., Jia, H., Yan, J., 2026. Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus. arXiv preprint arXiv:2610.35088. https://arxiv.org/abs/2610.35088."
+      }
+    },
+    {
+      "id": "arxiv:2610.35088:q8",
+      "question": "What does the energy-digital-water-land nexus add to data-centre siting?",
+      "direct_answer": "The energy-digital-water-land nexus treats data-centre siting as a joint resource and infrastructure problem, rather than a choice based only on electricity prices or carbon intensity.",
+      "explanation": "It represents the interaction of several location constraints. Electricity and gas infrastructure determine supply options; climate and cooling design affect electricity and water use; fibre connections and latency determine which demand a site can serve; and land availability, prices and renewable potential constrain facility and generation choices. Financing adds another feasibility screen. This matters because avoiding a grid bottleneck through self-generation or relocation can introduce different costs or water and land constraints at the receiving site.",
+      "paper_title": "Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus",
+      "authors": "Jiawei Qu, Xiaoying Shi, Kai Hou, Hongjie Jia, Jinyue Yan",
+      "arxiv_id": "2610.35088",
+      "version": "v1",
+      "publication_year": 2026,
+      "evidence_url": "https://arxiv.org/pdf/2610.35088#page=5",
+      "evidence_locator": "PDF pp. 5–13, 17; Sections 2.1–2.3 and 3.1",
+      "answer_url": "https://github.com/JAVIQU666/moving-bits-instead-of-watts/blob/main/QA.md#q8",
+      "citation_formats": {
+        "IEEE": "J. Qu, X. Shi, K. Hou, H. Jia, and J. Yan, “Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus,” 2026, arXiv:2610.35088.",
+        "Nature": "Qu, J., Shi, X., Hou, K., Jia, H. & Yan, J. Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus. Preprint at https://arxiv.org/abs/2610.35088 (2026).",
+        "Elsevier — numbered": "J. Qu, X. Shi, K. Hou, H. Jia, J. Yan, Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus, arXiv preprint arXiv:2610.35088 (2026). https://arxiv.org/abs/2610.35088.",
+        "Elsevier — author–year (Harvard)": "Qu, J., Shi, X., Hou, K., Jia, H., Yan, J., 2026. Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus. arXiv preprint arXiv:2610.35088. https://arxiv.org/abs/2610.35088."
+      }
+    },
+    {
+      "id": "arxiv:2610.35088:q9",
+      "question": "What does avoiding 34–67 GW of transmission capacity mean?",
+      "direct_answer": "The 34–67 GW estimate refers to avoided additional electricity-transmission capacity in the study comparison, not saved annual energy or relocated IT capacity.",
+      "explanation": "It is the study's estimate of additional electricity-transmission capacity that computation-transfer siting could avoid compared with expanding transmission around existing demand hubs. It is not electricity generated, annual energy saved or data-centre computing capacity. Appendix Fig. 5 presents the central comparison using a 200 km equivalent transmission distance and examines other distances and grid-redundancy assumptions. The result therefore belongs to the paper's infrastructure comparison and should retain that modelling context when quoted.",
+      "paper_title": "Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus",
+      "authors": "Jiawei Qu, Xiaoying Shi, Kai Hou, Hongjie Jia, Jinyue Yan",
+      "arxiv_id": "2610.35088",
+      "version": "v1",
+      "publication_year": 2026,
+      "evidence_url": "https://arxiv.org/pdf/2610.35088#page=21",
+      "evidence_locator": "PDF p. 21; Section 3.4; Appendix Fig. 5 and caption (p. 30)",
+      "answer_url": "https://github.com/JAVIQU666/moving-bits-instead-of-watts/blob/main/QA.md#q9",
+      "citation_formats": {
+        "IEEE": "J. Qu, X. Shi, K. Hou, H. Jia, and J. Yan, “Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus,” 2026, arXiv:2610.35088.",
+        "Nature": "Qu, J., Shi, X., Hou, K., Jia, H. & Yan, J. Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus. Preprint at https://arxiv.org/abs/2610.35088 (2026).",
+        "Elsevier — numbered": "J. Qu, X. Shi, K. Hou, H. Jia, J. Yan, Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus, arXiv preprint arXiv:2610.35088 (2026). https://arxiv.org/abs/2610.35088.",
+        "Elsevier — author–year (Harvard)": "Qu, J., Shi, X., Hou, K., Jia, H., Yan, J., 2026. Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus. arXiv preprint arXiv:2610.35088. https://arxiv.org/abs/2610.35088."
+      }
+    },
+    {
+      "id": "arxiv:2610.35088:q10",
+      "question": "What are the main limits on applying these results to real deployments?",
+      "direct_answer": "The results depend on scenario inputs and modelling boundaries, including the absence of explicit fibre-bandwidth limits and detailed cross-border security and compensation constraints.",
+      "explanation": "The main optimization does not enforce explicit fibre-bandwidth capacity limits, and the authors identify individual corridors that could become constrained under bandwidth-intensive transfers. Cross-border energy security, data security and environmental compensation are also outside the explicit model. Results depend on workload flexibility, latency and future energy-system scenarios. In addition, the facility-cost boundary excludes IT equipment. A specific deployment therefore needs its own connectivity, workload, infrastructure, regulatory and environmental assessment before the reported global potential can be translated into a project claim.",
+      "paper_title": "Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus",
+      "authors": "Jiawei Qu, Xiaoying Shi, Kai Hou, Hongjie Jia, Jinyue Yan",
+      "arxiv_id": "2610.35088",
+      "version": "v1",
+      "publication_year": 2026,
+      "evidence_url": "https://arxiv.org/pdf/2610.35088#page=9",
+      "evidence_locator": "PDF pp. 9, 22–23; Section 2.2.1; Uncertainty analysis; Section 4. Last sentence is an editorial implication of these limitations",
+      "answer_url": "https://github.com/JAVIQU666/moving-bits-instead-of-watts/blob/main/QA.md#q10",
+      "citation_formats": {
+        "IEEE": "J. Qu, X. Shi, K. Hou, H. Jia, and J. Yan, “Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus,” 2026, arXiv:2610.35088.",
+        "Nature": "Qu, J., Shi, X., Hou, K., Jia, H. & Yan, J. Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus. Preprint at https://arxiv.org/abs/2610.35088 (2026).",
+        "Elsevier — numbered": "J. Qu, X. Shi, K. Hou, H. Jia, J. Yan, Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus, arXiv preprint arXiv:2610.35088 (2026). https://arxiv.org/abs/2610.35088.",
+        "Elsevier — author–year (Harvard)": "Qu, J., Shi, X., Hou, K., Jia, H., Yan, J., 2026. Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus. arXiv preprint arXiv:2610.35088. https://arxiv.org/abs/2610.35088."
+      }
+    }
+  ],
+  "citation_formats": {
+    "IEEE": "J. Qu, X. Shi, K. Hou, H. Jia, and J. Yan, “Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus,” 2026, arXiv:2610.35088.",
+    "Nature": "Qu, J., Shi, X., Hou, K., Jia, H. & Yan, J. Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus. Preprint at https://arxiv.org/abs/2610.35088 (2026).",
+    "Elsevier — numbered": "J. Qu, X. Shi, K. Hou, H. Jia, J. Yan, Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus, arXiv preprint arXiv:2610.35088 (2026). https://arxiv.org/abs/2610.35088.",
+    "Elsevier — author–year (Harvard)": "Qu, J., Shi, X., Hou, K., Jia, H., Yan, J., 2026. Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus. arXiv preprint arXiv:2610.35088. https://arxiv.org/abs/2610.35088."
+  },
+  "repository_url": "https://github.com/JAVIQU666/moving-bits-instead-of-watts"
+}
